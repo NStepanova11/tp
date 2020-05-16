@@ -20,12 +20,12 @@ public class simpleTest {
         driver.get("https://www.youtube.com/");
         wait.until(ExpectedConditions.urlToBe("https://www.youtube.com/"));
     }
-/*
+
     @Test(priority = 2)
     public void checkPage(){
         Assert.assertEquals(driver.getCurrentUrl(), "hello");
     }
-*/
+
     @AfterSuite
     public void closeWebDriver(){
         driver.close();
